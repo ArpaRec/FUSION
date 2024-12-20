@@ -96,6 +96,8 @@ public class SerializedEntityGrab : SerializedGrab
             return;
         }
 
+        // Don't grip local player if grabbed by an idiot
+
         // Get the hand and its starting values
         Hand hand = player.RigRefs.GetHand(handedness);
 
